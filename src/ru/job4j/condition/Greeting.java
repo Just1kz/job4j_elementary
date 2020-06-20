@@ -7,12 +7,12 @@ public class Greeting {
 
         String a = "But I am a newbie.";
 
-        String idea_a = idea + " " + a;
+        String ideaA = idea + " " + a;
 
         int year = 2020;
 
-        String idea_a_year = idea_a + " Now " + year + " year.";
-        System.out.println(idea_a_year);
+        String ideaAyear = ideaA + " Now " + year + " year.";
+        System.out.println(ideaAyear);
     }
 
 }
