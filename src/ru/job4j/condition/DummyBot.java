@@ -10,22 +10,27 @@ public class DummyBot {
         String a2 = "Это ставит меня в тупик. Задайте другой вопрос.";
         String a3 = "До скорой встречи.";
 
-        if (question.equals(q1)){
-            return a1;
-        } else if (question.equals(q2)){
+        if (question.equals(q1)) {
+             return a1;
+        } else if (question.equals(q2)) {
                 return a2;
                 } else  {
                         return a3;
                         }
     }
 
-
     public static void main(String[] args) {
+
         String rsl = DummyBot.answer("Привет, Бот");
+
         System.out.println(rsl);
+
         rsl = DummyBot.answer("Ежики нынче вкусные?");
+
         System.out.println(rsl);
+
         rsl = DummyBot.answer("Пока.");
+
         System.out.println(rsl);
     }
 
