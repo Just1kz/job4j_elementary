@@ -4,11 +4,11 @@ public class DummyBot {
     public static String answer(String question) {
 
         String q1 = "Привет, Бот";
-        String q2 = "Ежики нынче вкусные?";
-        String q3 = "Пока.";
+        String q3 = "Ежики нынче вкусные?";
+        String q2 = "Пока.";
         String a1 = "Привет, умник.";
-        String a2 = "Это ставит меня в тупик. Задайте другой вопрос.";
-        String a3 = "До скорой встречи.";
+        String a3 = "Это ставит меня в тупик. Задайте другой вопрос.";
+        String a2 = "До скорой встречи.";
 
         if (question.equals(q1)) {
              return a1;
