@@ -10,9 +10,12 @@ public class MultiMax {
 //                        return third;
 //                        }
 
-        int result = (first > second && first > third) ? first : (second > third ? second : third);
-        return result;
+//      int result = (first > second && first > third) ? first : (second > third ? second : third);
+//      return result;
 
+        int result = first > second ? first : second;
+        int result1 = result > third ? result : third;
+        return result1;
 
     }
 
