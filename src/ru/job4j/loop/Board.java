@@ -24,7 +24,6 @@ public static void paint(int width, int height) {
         System.out.println();
     }
 }
-
     public static void main(String[] args) {
         paint(3, 3);
         System.out.println();
