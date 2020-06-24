@@ -46,7 +46,7 @@ public class CheckPrimeNumberTest {
     @Test
     public void whenCheck1() {
         boolean x = CheckPrimeNumber.check(1);
-        assertThat(x, is(true));
+        assertThat(x, is(false));
     }
 
 }
