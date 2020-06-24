@@ -23,11 +23,11 @@ public class Counter {
         System.out.println(sum(0, 10));
         System.out.println(sum(3, 8));
         System.out.println(sum(1, 1));
-//        System.out.println(sum(15, 2));
-//        System.out.println(sum(3, 7));
-//        System.out.println(sum(6, 13));
-//        System.out.println(sum(10, 21));
-//        System.out.println(sum(11, 19));
+        System.out.println(sum(15, 2));
+        System.out.println(sum(3, 7));
+        System.out.println(sum(6, 13));
+        System.out.println(sum(10, 21));
+        System.out.println(sum(11, 19));
         System.out.println(sumByEven(0, 10));
         System.out.println(sumByEven(3, 8));
         System.out.println(sumByEven(1, 1));
