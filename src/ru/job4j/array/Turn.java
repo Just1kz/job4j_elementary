@@ -10,9 +10,11 @@ public class Turn {
                 array[array.length - 1] = temp;
             } else {
 
-                int temp = array[index];
-                array[index] = array[array.length - 1 - index];
-                array[array.length - 1 - index] = temp;
+                array = SwitchArray.swap(array, index, (array.length - 1 - index));
+
+//                int temp = array[index];
+//                array[index] = array[array.length - 1 - index];
+//                array[array.length - 1 - index] = temp;
             }
         }
         return array;
