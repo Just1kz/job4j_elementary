@@ -23,4 +23,13 @@ public class CheckTest {
         boolean expect = false;
         assertThat(result, is(expect));
     }
+
+    @Test
+    public void whenMonoAllFalse() {
+        Turn turner = new Turn();
+        boolean[] input = new boolean[] {false, false, false, false};
+        boolean result = Check.mono(input);
+        boolean expect = false;
+        assertThat(result, is(expect));
+    }
 }
