@@ -15,7 +15,6 @@ public class Fit {
         short height = 175;
         double man = Fit.manWeight(height);
         double woman = Fit.womanWeight(height);
-
         System.out.println("Man 175 is " + man);
         System.out.println("Woman 175 is " + woman);
     }

@@ -10,7 +10,6 @@ public class Triangle {
 
     public static void main(String[] args) {
         boolean treg = Triangle.exist(2.00, 2.00, 2.00);
-        
         System.out.println("Треугольник существует? Ответ: " + treg);
 }
 

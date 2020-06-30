@@ -4,8 +4,7 @@ public class Defragment {
     public static String[] compress(String[] array) {
         for (int findNull = 0; findNull < array.length; findNull++) {
             if (array[findNull] == null) {
-                int indexNull = findNull; /* указатель на null ячейку. */
-                /* переместить первую не null ячейку. Нужен цикл. */
+                int indexNull = findNull;
                 for (int findNotNull = (indexNull + 1); findNotNull < array.length; findNotNull++) {
                     if (array[findNotNull] != null) {
                         int indexNotNull = findNotNull;

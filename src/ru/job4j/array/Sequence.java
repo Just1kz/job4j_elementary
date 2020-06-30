@@ -12,6 +12,5 @@ public class Sequence {
         array[2][0] = 7;
         array[2][1] = 8;
         array[2][2] = 9;
-        // 3*3=9 - все ячейки заполнены.
     }
 }

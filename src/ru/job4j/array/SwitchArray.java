@@ -7,8 +7,6 @@ public class SwitchArray {
         array[dest] = temp;
         return array;
     }
-    //source указывает индекс элемента, который нужно заменить на элемент из dest.
-    //То есть значение ячеек source и dest нужно поменять местами.
 
     public static int[] swapBorder(int[] array) {
         int temp = array[0];
@@ -24,8 +22,4 @@ public class SwitchArray {
             System.out.println(rsl[index]);
         }
     }
-    //Ниже дан код. Метод swapBorder - меняет местами нулевой элемент и последний элемент в массиве.
-    //    Это код падает с ошибкой java.lang.ArrayIndexOutOfBoundsException.
-    //
-    //    Ваша задача устранить эту ошибку.
 }
