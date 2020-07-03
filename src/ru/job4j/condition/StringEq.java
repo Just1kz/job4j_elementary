@@ -2,9 +2,7 @@ package ru.job4j.condition;
 
 public class StringEq {
     public static boolean check(String login) {
-//        String root = new String("root"); - Папа (мастер йода) курса сказал так не делать :D \m/
         String root = "root";
-
         boolean access = root.equals(login);
         return access;
     }
