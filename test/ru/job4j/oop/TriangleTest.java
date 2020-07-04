@@ -16,7 +16,7 @@ public class TriangleTest {
         Triangle triangle = new Triangle(a, b, c);
         double expected = 8.00;
         double rsl = triangle.area();
-        Assert.assertEquals(expected, rsl, 0.01);
-        //assertThat(rsl, closeTo(2, 0.001));
+        //Assert.assertEquals(expected, rsl, 0.01);
+        assertThat(rsl, closeTo(8, 0.001));
     }
 }
