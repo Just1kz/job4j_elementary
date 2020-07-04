@@ -14,15 +14,15 @@ public class Calculator {
 //        System.out.println(fiveMinusTwo);
 //        System.out.println(fourTimeTwo);
 //    }
-public double add(double first, double second) {
+public static double add(double first, double second) {
     return first + second;
 }
 
-    public double add(double first, double second, double third) {
+    public static double add(double first, double second, double third) {
         return add(first, add(second, third));
     }
 
-    public double add(double first, double second, double third, double four) {
+    public static double add(double first, double second, double third, double four) {
         return add(add(first, second), add(third, four));
     }
 }
