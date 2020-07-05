@@ -1,13 +1,12 @@
 package ru.job4j.max;
 
-public class Surgeon extends Doctor {
+public class Builder {
     private String specialization;
 
     public void getSpecialization() {
-
     }
 
-    public boolean operationHend(Pacient pacient) {
+    public boolean buildABuilding(Customer customer) {
         return true;
     }
 }
