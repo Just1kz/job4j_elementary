@@ -1,6 +1,6 @@
 package ru.job4j.max;
 
-public class Builder {
+public class Builder extends Engineer {
     private String specialization;
 
     public void getSpecialization() {
