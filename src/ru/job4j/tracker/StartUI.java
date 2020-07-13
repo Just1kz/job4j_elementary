@@ -55,7 +55,7 @@ public class StartUI {
                     System.out.print("Enter name to search: ");
                     String name = scanner.nextLine();
                     Item[] showAllNameSearch = tracker.findByName(name);
-                    if (showAllNameSearch != null) {
+                    if (showAllNameSearch.length > 0) {
                         for (int i = 0; i < showAllNameSearch.length; i++) {
                             System.out.println(showAllNameSearch[i]);
                         }
