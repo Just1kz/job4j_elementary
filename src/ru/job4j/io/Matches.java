@@ -17,7 +17,7 @@ public class Matches {
                         playerStep = Integer.valueOf(input.nextLine());
                     }
             winScore = winScore - playerStep;
-            if (winScore < 0) {
+            if (winScore <= 0) {
                 System.out.println("Game over, Winner " + name);
                 break;
             }
