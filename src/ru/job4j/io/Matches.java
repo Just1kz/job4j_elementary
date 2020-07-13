@@ -11,16 +11,12 @@ public class Matches {
         while (winScore > 0) {
             String name = gamer ? "игрок1" : "игрок2";
             System.out.println(name + " тяните спички (от 1 до 3-х)   ");
-            int player1Step = Integer.valueOf(input.nextLine());
-                while (winScore > 0) {
-                    if ((player1Step == 1) || (player1Step == 2) || (player1Step == 3)) {
-                        winScore = winScore - player1Step;
-                        break;
-                    } else {
+            int playerStep = Integer.valueOf(input.nextLine());
+                while (playerStep < 1 || playerStep > 3) {
                         System.out.println("Вы ввели недопустимое число спичек, требуется от 1 до 3 выбрать значение, просьба повторить ввод данных");
-                        player1Step = Integer.valueOf(input.nextLine());
+                        playerStep = Integer.valueOf(input.nextLine());
                     }
-                }
+            winScore = winScore - playerStep;
             if (winScore < 0) {
                 System.out.println("Game over, Winner " + name);
                 break;
