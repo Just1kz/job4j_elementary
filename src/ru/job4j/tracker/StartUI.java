@@ -29,6 +29,8 @@ public class StartUI {
                     Item item = new Item(name);
                     if (tracker.replace(id, item)) {
                         System.out.println("replaces completed");
+                    } else {
+                        System.out.println("Ошибка при вводе данных, Имя заявки или ID не существует. Требуется повторить операцию с вводом корректных данных");
                     }
                 } else if (select == 3) {
                     System.out.println("=== Delete Item ====");
@@ -36,19 +38,29 @@ public class StartUI {
                     int id = Integer.valueOf(scanner.nextLine());
                     if (tracker.delete(id)) {
                         System.out.println("delete completed");
+                    } else {
+                        System.out.println("Ошибка при вводе данных, ID не существует. Требуется повторить операцию с вводом корректных данных");
                     }
                 } else if (select == 4) {
                     System.out.println("=== Find by Id ====");
                     System.out.print("Enter id: ");
                     int id = Integer.valueOf(scanner.nextLine());
-                    System.out.println(tracker.findById(id));
+                        if (tracker.findById(id) != null) {
+                            System.out.println(tracker.findById(id));
+                        } else {
+                            System.out.println("Ошибка при вводе данных, ID не существует. Требуется повторить операцию с вводом корректных данных");
+                        }
                 } else if (select == 5) {
                     System.out.println("=== Find by Name ====");
                     System.out.print("Enter name to search: ");
                     String name = scanner.nextLine();
                     Item[] showAllNameSearch = tracker.findByName(name);
-                    for (int i = 0; i < showAllNameSearch.length; i++) {
-                        System.out.println(showAllNameSearch[i]);
+                    if (showAllNameSearch != null) {
+                        for (int i = 0; i < showAllNameSearch.length; i++) {
+                            System.out.println(showAllNameSearch[i]);
+                        }
+                    } else {
+                        System.out.println("Ошибка при вводе данных, Имя заявки не существует. Требуется повторить операцию с вводом корректных данных");
                     }
                 } else if (select == 6) {
                     run = false;
