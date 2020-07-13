@@ -45,8 +45,9 @@ public class StartUI {
                     System.out.println("=== Find by Id ====");
                     System.out.print("Enter id: ");
                     int id = Integer.valueOf(scanner.nextLine());
-                        if (tracker.findById(id) != null) {
-                            System.out.println(tracker.findById(id));
+                    Item item = tracker.findById(id);
+                        if (item != null) {
+                            System.out.println(item);
                         } else {
                             System.out.println("Ошибка при вводе данных, ID не существует. Требуется повторить операцию с вводом корректных данных");
                         }
