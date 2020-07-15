@@ -7,7 +7,7 @@ public class Fact {
         System.out.println(a);
     }
 
-    public int calc(int n) {
+    public static int calc(int n) {
         if (n < 0) {
             throw new IllegalArgumentException("Entered data is incorrect");
         }
