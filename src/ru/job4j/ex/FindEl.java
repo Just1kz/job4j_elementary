@@ -1,30 +1,26 @@
 package ru.job4j.ex;
 
-import java.util.Arrays;
-
 public class FindEl {
-    public static String[] indexOf(String[] value, String key) throws ElementNotFoundException {
-        if (key.equals("") || key == null) {
-            throw new ElementNotFoundException("Key could not be empty or null ");
-        }
-        String[] mass = new String[value.length];
-        int count = 0;
+    public static int indexOf(String[] value, String key) throws ElementNotFoundException {
+        int rsl = -1;
         for (int index = 0; index < value.length; index++) {
             if (value[index].equals(key)) {
-                mass[count] = value[index];
-                count += 1;
+                rsl = index;
+                break;
             }
         }
-        return Arrays.copyOf(mass, count);
+        if (rsl < 0) {
+            throw new ElementNotFoundException("Element not found on arrays");
+        }
+        return rsl;
     }
 
     public static void main(String[] args) {
         String[] test = {"Ebay", "Anton", "Amazon", "Anton", "Ozon"};
+        int a;
         try {
-            String[] test2 = indexOf(test, "Anton");
-            for (int i = 0; i < test2.length; i++) {
-                System.out.println(test2[i]);
-            }
+            a = indexOf(test, "asd");
+            System.out.println(a);
         } catch (ElementNotFoundException e) {
             e.printStackTrace();
         }
